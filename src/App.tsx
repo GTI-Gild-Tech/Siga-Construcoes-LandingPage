@@ -20,6 +20,11 @@ import {
 import hero from './assets/hero-img.png'; 
 import logoHorizontal from './assets/logo-horizontal.png'; 
 import logoHorizontalBranca from './assets/logo-horizontal-branco.png'; 
+import { WhatsappLogo } from "@phosphor-icons/react";
+import { FacebookLogo } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
+
+
 
 function App() {
   // Defina a interface para o estado do formulário
@@ -136,7 +141,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
       {/* Hero Section */}
       <motion.section
         id="inicio"
-        className="relative bg-cover bg-center h-screen w-full text-white"
+        className="relative bg-cover bg-center lg:h-screen h-[110vh] w-full text-white"
         style={{ backgroundImage: `url(${hero})` }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -655,13 +660,13 @@ const WHASTAPPJUSTNUMBER = "557436119193"
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
                   <a href="https://www.facebook.com/profile.php?id=100088244803284" target='blank'>
-                  <span className="text-sm font-bold">f</span></a>
+                  <span className="text-sm font-bold"><FacebookLogo size={20} weight="fill" /></span></a>
                 </div>
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <a href="https://www.instagram.com/sigaconstrucoes/" target='blank'><span className="text-sm font-bold">in</span></a>
+                  <a href="https://www.instagram.com/sigaconstrucoes/" target='blank'><span className="text-sm font-bold"><InstagramLogo size={20} weight="fill" /></span></a>
                 </div>
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <a href={WHATSAPP_PHONE_NUMBER} target='blank'><span className="text-sm font-bold">@</span></a>
+                  <a href={WHATSAPP_PHONE_NUMBER} target='blank'><span className="text-sm font-bold"><WhatsappLogo size={20} weight="fill" /></span></a>
                 </div>
               </div>
             </div>
@@ -689,7 +694,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
           </div>
 
           <div className="border-t border-[#2d30a4] mt-12 pt-8 text-center md:flex md:justify-between text-blue-200">
-            <p>&copy; 2025 Siga Construções. Todos os direitos reservados.</p> <p>Quer ter um site como esse? Clique aqui</p>
+            <p>&copy; 2025 Siga Construções. Todos os direitos reservados.</p> <p>Quer ter um site como esse? <a href='https://www.gildtechinformation.com/' className="text-indigo-100 font-bold">Clique aqui</a></p>
           </div>
         </div>
       </footer>
