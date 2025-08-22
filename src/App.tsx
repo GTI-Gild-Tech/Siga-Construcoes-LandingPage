@@ -18,7 +18,6 @@ import {
   Wrench
 } from 'lucide-react';  
 import hero from './assets/hero-img.png'; 
-import logoVertical from './assets/logo-vertical.png';
 import logoHorizontal from './assets/logo-horizontal.png'; 
 import logoHorizontalBranca from './assets/logo-horizontal-branco.png'; 
 
@@ -259,7 +258,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 <div className="w-16 h-16 bg-gradient-to-r from-[#3F8EBF] to-[#2d30a4] rounded-xl flex items-center justify-center mx-auto mb-6">
                   <Clock className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Atendimento 24h</h3>
+                <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Atendimento ágil</h3>
                 <p className="text-gray-600">Nossa equipe está sempre disponível para ajudar você.</p>
               </div>
             </div>
@@ -471,7 +470,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#2d30a4] mb-4">O que nossos clientes dizem</h2>
-            <p className="text-xl text-gray-600">Mais de 10.000 clientes satisfeitos confiam na ConstruMax</p>
+            <p className="text-xl text-gray-600">Mais de 10.000 clientes satisfeitos confiam na Siga</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
