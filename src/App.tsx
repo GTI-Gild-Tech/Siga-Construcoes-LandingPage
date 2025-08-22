@@ -157,7 +157,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 Material de <span className="text-[#FD4E0B]">Construção</span> de Qualidade
               </h1>
               <p className="text-xl text-blue-100 leading-relaxed">
-                Há mais de 15 anos fornecendo os melhores materiais para sua obra. 
+                Há mais de 7 anos fornecendo os melhores materiais para sua obra. 
                 Qualidade garantida, preços competitivos e entrega rápida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -186,7 +186,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
-                    <span>Mais de 15 anos no mercado</span>
+                    <span>Mais de 7 anos no mercado</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
@@ -391,7 +391,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
               <div>
                 <h2 className="text-4xl font-bold text-white mb-6">Sobre a Siga</h2>
                 <p className="text-xl text-gray-100 leading-relaxed mb-6">
-                  Há mais de 15 anos no mercado, a Siga se consolidou como referência 
+                  Há mais de 7 anos no mercado, a Siga se consolidou como referência 
                   em materiais de construção, oferecendo qualidade superior e atendimento 
                   personalizado para cada cliente.
                 </p>
@@ -405,7 +405,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="text-center p-6 bg-gradient-to-br from-[#2d30a4] to-[#923896] rounded-2xl text-white">
-                  <div className="text-4xl font-bold mb-2">15+</div>
+                  <div className="text-4xl font-bold mb-2">7+</div>
                   <div className="text-blue-100">Anos de Experiência</div>
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-[#FD4E0B] to-[#e8440a] rounded-2xl text-white">
@@ -429,22 +429,22 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="w-[20vh] md:w-auto">
-                    <h4 className="font-semibold text-[#2d30a4] mb-2">2009 - Fundação</h4>
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2018 - Fundação</h4>
                     <p className="text-gray-600">Iniciamos com uma pequena loja focada em atender construtores locais com qualidade e preço justo.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="w-[20vh] md:w-auto">
-                    <h4 className="font-semibold text-[#2d30a4] mb-2">2015 - Expansão</h4>
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2020 - Expansão</h4>
                     <p className="text-gray-600">Ampliamos nosso estoque e começamos a atender toda a região metropolitana com entrega própria.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
                   <div className="w-[20vh] md:w-auto">
-                    <h4 className="font-semibold text-[#2d30a4] mb-2">2020 - Modernização</h4>
-                    <p className="text-gray-600">Investimos em tecnologia e processos para oferecer atendimento 24h e consultoria especializada.</p>
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2022 - Modernização</h4>
+                    <p className="text-gray-600">Investimos em tecnologia e processos para oferecer atendimento ágil e consultoria especializada.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -503,7 +503,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-6 italic">"Excelente atendimento e produtos de primeira qualidade. Já sou cliente há 5 anos e sempre recomendo!"</p>
+              <p className="text-gray-600 mb-6 italic">"O atendimento aqui é de primeira! Já sou cliente há 5 anos e confio de olhos fechados. Os produtos são de excelente qualidade e sempre indico a loja para todo mundo."</p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#3F8EBF] to-[#2d30a4] rounded-full flex items-center justify-center text-white font-bold">
                   JS
@@ -521,7 +521,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-6 italic">"Entrega rápida e preços justos. A ConstruMax é minha primeira opção para materiais de construção."</p>
+              <p className="text-gray-600 mb-6 italic">"A entrega foi super rápida e o preço é justo. A Siga é a minha loja de referência para materiais de construção, não troco por nada!"</p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#FD4E0B] to-[#e8440a] rounded-full flex items-center justify-center text-white font-bold">
                   MS
@@ -539,7 +539,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-6 italic">"Atendimento excepcional e produtos sempre em estoque. Super recomendo para qualquer obra!"</p>
+              <p className="text-gray-600 mb-6 italic">"Sempre encontro tudo que preciso para as minhas obras, e o atendimento é o melhor. Recomendo de verdade!"</p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-[#3F8EBF] to-[#2d30a4] rounded-full flex items-center justify-center text-white font-bold">
                   CA
@@ -672,7 +672,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 <img src={logoHorizontalBranca} alt="Logo" className="h-12" />
               </div>
               <p className="text-blue-200 mb-6 leading-relaxed">
-                Há mais de 15 anos sendo referência em materiais de construção. 
+                Há mais de 7 anos sendo referência em materiais de construção. 
                 Qualidade, confiança e os melhores preços para sua obra.
               </p>
               <div className="flex space-x-4">
