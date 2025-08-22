@@ -18,7 +18,6 @@ import {
   Wrench
 } from 'lucide-react';  
 import hero from './assets/hero-img.png'; 
-import logoVertical from './assets/logo-vertical.png';
 import logoHorizontal from './assets/logo-horizontal.png'; 
 import logoHorizontalBranca from './assets/logo-horizontal-branco.png'; 
 
@@ -32,7 +31,8 @@ interface FormData {
 
 // Número de telefone para onde as mensagens serão enviadas, no formato internacional.
 // Exemplo: 5511999999999 (55 para o Brasil, 11 para o DDD de São Paulo)
-const WHATSAPP_PHONE_NUMBER = "+5574991364725"; 
+const WHATSAPP_PHONE_NUMBER = "tel:+557436119193"; 
+const WHASTAPPJUSTNUMBER = "557436119193"
 
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -40,7 +40,7 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
     message: "",
   });
 
-  const contactPhone: string = "(32) 99999-8888";
+  const contactPhone: string = "(74) 36119193";
 
 
   const handleInputChange = (
@@ -60,11 +60,17 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
     const whatsappMessage = `Olá! Meu nome é ${formData.name}, e meu telefone é ${formData.phone}.${formData.message}`;
 
     // Cria a URL do WhatsApp com o número e a mensagem
-    const whatsappURL = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappURL = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Abre uma nova aba com a URL do WhatsApp
     window.open(whatsappURL, "_blank");
   };
+
+  const WHATSAPP_PHONE_NUMBERFOR_ORCAMENTO = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=Gostaria de solicitar um orçamento.`
+  const WHATSAPP_PHONE_NUMBERFOR_PRODUTOS = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=Gostaria de ver seus produtos.`
+  const WHATSAPP_PHONE_NUMBERFOR_CIMENTOEARGAMASSA = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=Gostaria de informações sobre cimento e argamassa`
+  const WHATSAPP_PHONE_NUMBERFOR_FERRAMENTAS = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=Gostaria de informações sobre ferramentas`
+  const WHATSAPP_PHONE_NUMBERFOR_MATERIAISELETRICOS = `https://wa.me/${WHASTAPPJUSTNUMBER}?text=Gostaria de informações sobre materiais elétricos`
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -93,7 +99,7 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
 
             <div className="hidden md:flex items-center space-x-4">
               <span className="text-sm text-gray-600">Orçamento grátis:</span>
-              <a href="tel:+5511999999999" className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors">
+              <a href={WHATSAPP_PHONE_NUMBER} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors">
                 <Phone className="h-4 w-4" />
                 <span>{contactPhone}</span>
               </a>
@@ -117,9 +123,9 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                 <a href="#servicos" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Serviços</a>
                 <a href="#sobre" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Sobre</a>
                 <a href="#contato" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Contato</a>
-                <a href="tel:+5511999999999" className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors w-fit">
+                <a href={WHATSAPP_PHONE_NUMBER} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors w-fit">
                   <Phone className="h-4 w-4" />
-                  <span>(11) 99999-9999</span>
+                  <span>{contactPhone}</span>
                 </a>
               </nav>
             </div>
@@ -150,13 +156,23 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                 Qualidade garantida, preços competitivos e entrega rápida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#FD4E0B] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#e8440a] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                 <a
+                  href={WHATSAPP_PHONE_NUMBERFOR_ORCAMENTO}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#FD4E0B] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#e8440a] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                >
                   <span>Solicitar Orçamento</span>
                   <ArrowRight className="h-5 w-5" />
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#2d30a4] transition-all duration-300">
+                </a>
+                  <a
+                  href={WHATSAPP_PHONE_NUMBERFOR_PRODUTOS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[#2d30a4] transition-all duration-300 flex items-center justify-center"
+                >
                   Ver Produtos
-                </button>
+                </a>
               </div>
             </div>
             <div className="lg:text-center">
@@ -242,7 +258,7 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                 <div className="w-16 h-16 bg-gradient-to-r from-[#3F8EBF] to-[#2d30a4] rounded-xl flex items-center justify-center mx-auto mb-6">
                   <Clock className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Atendimento 24h</h3>
+                <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Atendimento ágil</h3>
                 <p className="text-gray-600">Nossa equipe está sempre disponível para ajudar você.</p>
               </div>
             </div>
@@ -285,10 +301,15 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
               <div className="p-8">
                 <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Cimento & Argamassa</h3>
                 <p className="text-gray-600 mb-6">Cimentos de alta qualidade, argamassas prontas e aditivos para construção civil.</p>
-                <button className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2">
+                <a
+                  href={WHATSAPP_PHONE_NUMBERFOR_CIMENTOEARGAMASSA}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2"
+                >
                   <span>Ver produtos</span>
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -299,10 +320,15 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
               <div className="p-8">
                 <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Ferramentas</h3>
                 <p className="text-gray-600 mb-6">Ferramentas profissionais das melhores marcas para todos os tipos de obra.</p>
-                <button className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2">
+               <a
+                  href={WHATSAPP_PHONE_NUMBERFOR_FERRAMENTAS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2"
+                >
                   <span>Ver produtos</span>
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -313,10 +339,15 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
               <div className="p-8">
                 <h3 className="text-xl font-bold text-[#2d30a4] mb-4">Materiais Elétricos</h3>
                 <p className="text-gray-600 mb-6">Fios, cabos, disjuntores e materiais elétricos certificados e seguros.</p>
-                <button className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2">
+                <a
+                  href={WHATSAPP_PHONE_NUMBERFOR_MATERIAISELETRICOS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#FD4E0B] font-semibold hover:text-[#e8440a] flex items-center space-x-2"
+                >
                   <span>Ver produtos</span>
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -439,7 +470,7 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#2d30a4] mb-4">O que nossos clientes dizem</h2>
-            <p className="text-xl text-gray-600">Mais de 10.000 clientes satisfeitos confiam na ConstruMax</p>
+            <p className="text-xl text-gray-600">Mais de 10.000 clientes satisfeitos confiam na Siga</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -535,8 +566,8 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">E-mail</h3>
-                  <p className="text-blue-950">contato@construmax.com.br</p>
-                  <p className="text-blue-950">vendas@construmax.com.br</p>
+                  <p className="text-blue-950">contato@sigamtrc.com.br</p>
+                  <p className="text-blue-950">vendas@sigamtrc.com.br</p>
                 </div>
               </div>
 
@@ -546,21 +577,24 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Endereço</h3>
-                  <p className="text-blue-950">Rua das Construções, 1234</p>
-                  <p className="text-blue-950">Centro - São Paulo, SP</p>
-                  <p className="text-blue-950">CEP: 01234-567</p>
+                  <p className="text-blue-950">Av. Gaspar de Lemos - Nossa Sra. da Penha</p>
+                  <p className="text-blue-950">  Juazeiro - BA</p>
+                  <p className="text-blue-950">CEP: 48902-290</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-blue-900/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold mb-6">Solicite seu Orçamento</h3>
-              <form className="space-y-6">
+               <form onSubmit={handleSubmit} className="space-y-6"> {/* Adicionado onSubmit ao formulário */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <input 
                       type="text" 
                       placeholder="Seu nome"
+                      name="name" // Adicionado o atributo name
+                      value={formData.name} // Adicionado o atributo value
+                      onChange={handleInputChange} // Adicionado o atributo onChange
                       className="w-full px-4 py-3 bg-white/70 border border-white/30 rounded-lg text-blue-950 placeholder-blue-800 focus:outline-none focus:ring-2 focus:ring-[#FD4E0B] focus:border-transparent"
                     />
                   </div>
@@ -568,6 +602,8 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                     <input 
                       type="email" 
                       placeholder="Seu e-mail"
+                      name="email" // Adicionado o atributo name (e-mail não está no formData atual, mas é uma boa prática)
+                      // O email não será enviado para o WhatsApp, mas é bom coletar se necessário.
                       className="w-full px-4 py-3 bg-white/70 border border-white/30 rounded-lg text-blue-950 placeholder-blue-800 focus:outline-none focus:ring-2 focus:ring-[#FD4E0B] focus:border-transparent"
                     />
                   </div>
@@ -576,6 +612,9 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                   <input 
                     type="tel" 
                     placeholder="Seu telefone"
+                    name="phone" // Adicionado o atributo name
+                    value={formData.phone} // Adicionado o atributo value
+                    onChange={handleInputChange} // Adicionado o atributo onChange
                     className="w-full px-4 py-3 bg-white/70 border border-white/30 rounded-lg text-blue-950 placeholder-blue-800 focus:outline-none focus:ring-2 focus:ring-[#FD4E0B] focus:border-transparent"
                   />
                 </div>
@@ -583,6 +622,9 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
                   <textarea 
                     rows={4} 
                     placeholder="Descreva sua necessidade..."
+                    name="message" // Adicionado o atributo name
+                    value={formData.message} // Adicionado o atributo value
+                    onChange={handleInputChange} // Adicionado o atributo onChange
                     className="w-full px-4 py-3 bg-white/70 border border-white/30 rounded-lg text-blue-950 placeholder-blue-800 focus:outline-none focus:ring-2 focus:ring-[#FD4E0B] focus:border-transparent resize-none"
                   ></textarea>
                 </div>
@@ -612,13 +654,14 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <span className="text-sm font-bold">f</span>
+                  <a href="https://www.facebook.com/profile.php?id=100088244803284" target='blank'>
+                  <span className="text-sm font-bold">f</span></a>
                 </div>
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <span className="text-sm font-bold">in</span>
+                  <a href="https://www.instagram.com/sigaconstrucoes/" target='blank'><span className="text-sm font-bold">in</span></a>
                 </div>
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <span className="text-sm font-bold">@</span>
+                  <a href={WHATSAPP_PHONE_NUMBER} target='blank'><span className="text-sm font-bold">@</span></a>
                 </div>
               </div>
             </div>
@@ -637,16 +680,16 @@ const WHATSAPP_PHONE_NUMBER = "+5574991364725";
             <div>
               <h4 className="text-lg font-bold mb-4">Horário de Funcionamento</h4>
               <ul className="space-y-2 text-blue-200">
-                <li>Segunda à Sexta: 7h às 18h</li>
-                <li>Sábados: 7h às 16h</li>
-                <li>Domingos: 8h às 12h</li>
-                <li className="text-[#FD4E0B] font-semibold">Plantão 24h para emergências</li>
+                <li>Segunda à Sexta: 8h às 18h</li>
+                <li>Sábados: 7h às 14h</li>
+                
+                
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-[#2d30a4] mt-12 pt-8 text-center text-blue-200">
-            <p>&copy; 2025 ConstruMax. Todos os direitos reservados.</p>
+          <div className="border-t border-[#2d30a4] mt-12 pt-8 text-center flex justify-between text-blue-200">
+            <p>&copy; 2025 Siga Construções. Todos os direitos reservados.</p> <p>Quer ter um site como esse? Clique aqui</p>
           </div>
         </div>
       </footer>
