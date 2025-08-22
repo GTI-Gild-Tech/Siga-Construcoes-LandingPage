@@ -141,7 +141,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
       {/* Hero Section */}
       <motion.section
         id="inicio"
-        className="relative bg-cover bg-center lg:h-screen h-[110vh] w-full text-white"
+        className="relative bg-cover bg-center lg:h-[90vh] h-[110vh] w-full text-white flex justify-center"
         style={{ backgroundImage: `url(${hero})` }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -205,6 +205,24 @@ const WHASTAPPJUSTNUMBER = "557436119193"
             </div>
           </div>
         </div>
+        {/* Scroll Indicator */}
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="absolute bottom-8  top-3/4 transform -translate-x-1/2 pt-10 lg:block hidden"
+        >
+          <div className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-slate-400 rounded-full mt-2"></div>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+          className="absolute text-slate-300 lg:block hidden bottom-6 pb-5  "
+        > Veja mais
+        </motion.div>
+       
       </motion.section>
 
       {/* Features Section */}
