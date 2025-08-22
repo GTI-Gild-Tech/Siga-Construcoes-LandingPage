@@ -426,30 +426,30 @@ const WHASTAPPJUSTNUMBER = "557436119193"
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-[#2d30a4] mb-6">Nossa História</h3>
               <div className="flex overflow-x-auto gap-4 pb-6 xl:pb-0">
-                <div className="flex items-start space-x-4 w-[300px]">
+                <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="w-[20vh]">
+                  <div className="w-[20vh] md:w-auto">
                     <h4 className="font-semibold text-[#2d30a4] mb-2">2009 - Fundação</h4>
                     <p className="text-gray-600">Iniciamos com uma pequena loja focada em atender construtores locais com qualidade e preço justo.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="w-[20vh]">
+                  <div className="w-[20vh] md:w-auto">
                     <h4 className="font-semibold text-[#2d30a4] mb-2">2015 - Expansão</h4>
                     <p className="text-gray-600">Ampliamos nosso estoque e começamos a atender toda a região metropolitana com entrega própria.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="w-[20vh]">
+                  <div className="w-[20vh] md:w-auto">
                     <h4 className="font-semibold text-[#2d30a4] mb-2">2020 - Modernização</h4>
                     <p className="text-gray-600">Investimos em tecnologia e processos para oferecer atendimento 24h e consultoria especializada.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
-                  <div className="w-[20vh]">
+                  <div className="w-[20vh] md:w-auto">
                     <h4 className="font-semibold text-[#2d30a4] mb-2">2025 - Liderança</h4>
                     <p className="text-gray-600">Hoje somos referência no setor, com mais de 10.000 clientes e crescimento constante.</p>
                   </div>
