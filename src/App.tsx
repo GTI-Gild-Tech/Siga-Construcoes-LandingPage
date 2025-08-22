@@ -141,7 +141,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
       {/* Hero Section */}
       <motion.section
         id="inicio"
-        className="relative bg-cover bg-center lg:h-[90vh] h-[110vh] w-full text-white flex justify-center"
+        className="relative bg-cover bg-center xl:h-[90vh] md:h-[110vh] lg:h-[120vh] w-full text-white flex justify-center"
         style={{ backgroundImage: `url(${hero})` }}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +182,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
             </div>
             <div className="lg:text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6 text-center">Por que escolher a ConstruMax?</h3>
+                <h3 className="text-2xl font-bold mb-6 text-center">Por que escolher a Siga?</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
