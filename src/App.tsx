@@ -399,64 +399,64 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 </div>
               </div>
         </div>
-        <div className="space-y-8">
-              <div className="bg-gray-50 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-[#2d30a4] mb-6">Nossa História</h3>
-                <div className=" flex">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h4 className="font-semibold text-[#2d30a4] mb-2">2009 - Fundação</h4>
-                      <p className="text-gray-600">Iniciamos com uma pequena loja focada em atender construtores locais com qualidade e preço justo.</p>
-                    </div>
+        <div className="space-y-8 pt-10">
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-[#2d30a4] mb-6">Nossa História</h3>
+              <div className="flex overflow-x-auto gap-4 ">
+                <div className="flex items-start space-x-4 w-[300px]">
+                  <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-[20vh]">
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2009 - Fundação</h4>
+                    <p className="text-gray-600">Iniciamos com uma pequena loja focada em atender construtores locais com qualidade e preço justo.</p>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h4 className="font-semibold text-[#2d30a4] mb-2">2015 - Expansão</h4>
-                      <p className="text-gray-600">Ampliamos nosso estoque e começamos a atender toda a região metropolitana com entrega própria.</p>
-                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-[20vh]">
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2015 - Expansão</h4>
+                    <p className="text-gray-600">Ampliamos nosso estoque e começamos a atender toda a região metropolitana com entrega própria.</p>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h4 className="font-semibold text-[#2d30a4] mb-2">2020 - Modernização</h4>
-                      <p className="text-gray-600">Investimos em tecnologia e processos para oferecer atendimento 24h e consultoria especializada.</p>
-                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-4 h-4 bg-[#FD4E0B] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-[20vh]">
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2020 - Modernização</h4>
+                    <p className="text-gray-600">Investimos em tecnologia e processos para oferecer atendimento 24h e consultoria especializada.</p>
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h4 className="font-semibold text-[#2d30a4] mb-2">2025 - Liderança</h4>
-                      <p className="text-gray-600">Hoje somos referência no setor, com mais de 10.000 clientes e crescimento constante.</p>
-                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-4 h-4 bg-[#923896] rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-[20vh]">
+                    <h4 className="font-semibold text-[#2d30a4] mb-2">2025 - Liderança</h4>
+                    <p className="text-gray-600">Hoje somos referência no setor, com mais de 10.000 clientes e crescimento constante.</p>
                   </div>
                 </div>
               </div>
-
-              {/* <div className="bg-gradient-to-br from-[#2d30a4] to-[#3F8EBF] rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Nossos Valores</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
-                    <span><strong>Qualidade:</strong> Produtos certificados das melhores marcas</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
-                    <span><strong>Confiança:</strong> Relacionamento transparente e duradouro</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
-                    <span><strong>Agilidade:</strong> Entrega rápida e atendimento eficiente</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
-                    <span><strong>Inovação:</strong> Sempre buscando as melhores soluções</span>
-                  </div>
-                </div>
-              </div> */}
             </div>
+
+            {/* <div className="bg-gradient-to-br from-[#2d30a4] to-[#3F8EBF] rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Nossos Valores</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
+                  <span><strong>Qualidade:</strong> Produtos certificados das melhores marcas</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
+                  <span><strong>Confiança:</strong> Relacionamento transparente e duradouro</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
+                  <span><strong>Agilidade:</strong> Entrega rápida e atendimento eficiente</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-[#FD4E0B]" />
+                  <span><strong>Inovação:</strong> Sempre buscando as melhores soluções</span>
+                </div>
+              </div>
+            </div> */}
           </div>
+        </div>
       </motion.section>
 
       {/* Testimonials Section */}
@@ -688,7 +688,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
             </div>
           </div>
 
-          <div className="border-t border-[#2d30a4] mt-12 pt-8 text-center flex justify-between text-blue-200">
+          <div className="border-t border-[#2d30a4] mt-12 pt-8 text-center md:flex md:justify-between text-blue-200">
             <p>&copy; 2025 Siga Construções. Todos os direitos reservados.</p> <p>Quer ter um site como esse? Clique aqui</p>
           </div>
         </div>
