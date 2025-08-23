@@ -104,7 +104,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
 
             <div className="hidden md:flex items-center space-x-4">
               <span className="text-sm text-gray-600">Orçamento grátis:</span>
-              <a href={WHATSAPP_PHONE_NUMBER} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors">
+              <a href={WHATSAPP_PHONE_NUMBERFOR_ORCAMENTO} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors">
                 <Phone className="h-4 w-4" />
                 <span>{contactPhone}</span>
               </a>
@@ -128,7 +128,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                 <a href="#servicos" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Serviços</a>
                 <a href="#sobre" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Sobre</a>
                 <a href="#contato" className="text-gray-700 hover:text-[#2d30a4] transition-colors">Contato</a>
-                <a href={WHATSAPP_PHONE_NUMBER} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors w-fit">
+                <a href={WHATSAPP_PHONE_NUMBERFOR_ORCAMENTO} className="flex items-center space-x-2 bg-[#FD4E0B] text-white px-4 py-2 rounded-lg hover:bg-[#e8440a] transition-colors w-fit">
                   <Phone className="h-4 w-4" />
                   <span>{contactPhone}</span>
                 </a>
@@ -684,7 +684,7 @@ const WHASTAPPJUSTNUMBER = "557436119193"
                   <a href="https://www.instagram.com/sigaconstrucoes/" target='blank'><span className="text-sm font-bold"><InstagramLogo size={20} weight="fill" /></span></a>
                 </div>
                 <div className="w-10 h-10 bg-[#3F8EBF] rounded-lg flex items-center justify-center hover:bg-[#FD4E0B] transition-colors cursor-pointer">
-                  <a href={WHATSAPP_PHONE_NUMBER} target='blank'><span className="text-sm font-bold"><WhatsappLogo size={20} weight="fill" /></span></a>
+                  <a href={WHATSAPP_PHONE_NUMBERFOR_ORCAMENTO} target='blank'><span className="text-sm font-bold"><WhatsappLogo size={20} weight="fill" /></span></a>
                 </div>
               </div>
             </div>
